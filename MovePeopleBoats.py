@@ -8,7 +8,6 @@ input = people = [3, 1, 2, 3], 3
 out = 3
 """
 
-
 def numRescueBoats(people, limit):
     people.sort()
     print(*people)
