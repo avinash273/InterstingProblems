@@ -2,6 +2,8 @@
 1. Binary Search Algorithm
 Time Complexity  :O(log n)
 Space Complexity :O(1)
+inp = arr = [1, 2, 3, 4, 5, 6]
+out = Element Found at  3
 """
 
 def BinarySearch(arr, target):
@@ -21,7 +23,7 @@ def BinarySearch(arr, target):
 
 
 arr = [1, 2, 3, 4, 5, 6]
-target = 7
+target = 4
 
 result = BinarySearch(arr, target)
 

@@ -3,6 +3,8 @@ Move all Zeros to the end of the array, maintaining the relative orders of other
 Time Complexity  :O(n)
 Space Complexity :O(1)
 inplace algorithm
+inp = arr = [1, 3, 0, 3, 0, 5, 12]
+out = 1->3->3->5->12->0->0
 """
 
 

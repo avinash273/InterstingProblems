@@ -2,6 +2,8 @@
 Given an array of of N  integers, find the maximum sum of K consecutive elements
 Time Complexity  :O(n)
 Space Complexity :O(1)
+inp: arr = [80, -50, 90, 100]
+out: 190
 """
 import sys
 
