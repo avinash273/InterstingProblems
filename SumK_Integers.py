@@ -1,5 +1,7 @@
 """
 Given an array of of N  integers, find the maximum sum of K consecutive elements
+Time Complexity  :O(n)
+Space Complexity :O(1)
 """
 import sys
 
