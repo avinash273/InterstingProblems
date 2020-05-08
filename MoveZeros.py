@@ -10,6 +10,7 @@ out = 1->3->3->5->12->0->0
 
 def MoveZeros(arr):
     arrLen = len(arr)
+    print(arrLen)
     if arrLen <= 0:
         return None
     else:
