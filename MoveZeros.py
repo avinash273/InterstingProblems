@@ -2,12 +2,12 @@
 Move all Zeros to the end of the array, maintaining the relative orders of other elements
 Time Complexity  :O(n)
 Space Complexity :O(1)
+inplace algorithm
 """
 
 
 def MoveZeros(arr):
     arrLen = len(arr)
-    NonZeroCount = 0
     if arrLen <= 0:
         return None
     else:
