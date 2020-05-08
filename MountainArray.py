@@ -16,7 +16,7 @@ def MountainArray(arr):
     i = 0
     while (i < arrLen and arr[i] < arr[i + 1]):
         i += 1
-    if (i == arrLen):
+    if (i == 1 or i == arrLen):
         return False
     if (i < arrLen):
         while (i < arrLen and arr[i] > arr[i + 1]):
@@ -29,3 +29,6 @@ def MountainArray(arr):
 
 arr = [1, 2, 3, 2, 1]
 print(MountainArray(arr))
+
+arr2 = [1, 2,3]
+print(MountainArray(arr2))
