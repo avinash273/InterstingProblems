@@ -4,6 +4,8 @@ followed by a decreasing sub array
 Condition: Min:3 nums in list
 inp -> arr = [1, 2, 3, 2, 1]
 out -> True
+Time Complexity  :O(n)
+Space Complexity :O(1)
 """
 
 
