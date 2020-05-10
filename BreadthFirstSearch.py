@@ -1,5 +1,5 @@
 """
-DFS implementation using Stack and Adjacency List on directed graphs
+implementing BFS traversal algorithms using adjacency list and queues
 Time: O(V + E)
 Space: (V)
 """
@@ -13,10 +13,6 @@ class Graph:
 
     def insertGraph(self, v1, v2):
         self.graph[v1].append(v2)
-        """
-        for undirected graph
-        self.graph[v2].append(v1)
-        """
 
     def printGraph(self):
         print(self.graph)
@@ -26,22 +22,20 @@ class Graph:
                 pass
                 print(node, "->", to)
 
-    def DFS(self, startNode):
+    def BFS(self, startNode):
         visited = set()
-        stack = []
-        stack.append(startNode)
+        queue = []
+        queue.append(startNode)
+        visited.add(startNode)
 
-        while (len(stack)):
-            cur = stack[-1]
-            stack.pop()
+        while queue:
+            u = queue.pop(0)
+            print(u, end=" ")
 
-            if (cur not in visited):
-                print(cur, end=" ")
-                visited.add(cur)
-
-            for node in self.graph[cur]:
-                if (node not in visited):
-                    stack.append(node)
+            for v in self.graph[u]:
+                if v not in visited:
+                    queue.append(v)
+                    visited.add(v)
 
 
 newgraph = Graph()
@@ -54,4 +48,4 @@ newgraph.insertGraph(9, 6)
 
 newgraph.printGraph()
 
-newgraph.DFS(2)
+newgraph.BFS(2)
